@@ -168,7 +168,7 @@ html {
 }
 
 .background-stars {
-  background-image: url(/media/images/stars.jpg);
+  background-image: url(./media/images/stars.jpg);
   width: 300%;
   height: 100%;
   position: absolute;
@@ -179,7 +179,7 @@ html {
 }
 
 .background-fog {
-  background-image: url(/media/images/image\ 5.png);
+  background-image: url(./media/images/image\ 5.png);
   width: 1000vw;
   height: 100%;
   background-repeat: round;
@@ -333,8 +333,8 @@ html {
   max-height: 520px;
   margin-top: 20px;
   object-fit: cover;
-  -webkit-mask-image: url(/media/images/mask.png);
-  mask-image: url(/media/images/mask.png);
+  -webkit-mask-image: url(./media/images/mask.png);
+  mask-image: url(./media/images/mask.png);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: 100% 100%;
@@ -363,7 +363,7 @@ html {
 }
 
 .popup__button-close {
-  background-image: url(/media/images/Close.svg);
+  background-image: url(./media/images/Close.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-secondary);
