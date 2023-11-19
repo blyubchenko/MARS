@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Марс</title>
+    <link rel="stylesheet" href="/vendor/fonts.css">
+    <link rel="stylesheet" href="/vendor/normalize.css">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="page">
+
+    <div class="popup">
+      <div class="popup__container section-size">
+          <button
+            class="popup__button-close"
+            type="button"
+            aria-label="Закрыть окно"
+          ></button>
+        <h2 class="popup__title">Бронирование билетов</h2>
+        <form class="popup__form" name="form-edit" action="#">
+          <fieldset class="popup__wraper-input">
+            <label class="popup__label" for="date-arrival"
+              >Дата заезда
+              <input
+                class="popup__input"
+                type="date"
+                id="date-arrival"
+                name="date-arrival"
+                required
+              />
+            </label>
+            <label class="popup__label" for="date-departure"
+              >Дата выезда
+              <input
+                class="popup__input"
+                type="date"
+                id="date-departure"
+                name="date-departure"
+                required
+              />
+            </label>
+            <label class="popup__label" for="quantity-select"
+              >Количество
+              <select class="popup__input" name="quantity" id="quantity-select">
+                <option class="popup__option" value="1" selected>1 человек</option>
+                <option class="popup__option" value="2">2 человека</option>
+                <option class="popup__option" value="3">3 человека</option>
+                <option class="popup__option" value="4">4 человека</option>
+                <option class="popup__option" value="5">5 человек</option>
+              </select>
+            </label>
+          </fieldset>
+          <button class="popup__button-submit" type="submit">
+            Купить билеты
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+     <div class="background-stars"></div>
+     <div class="background-fog"></div>
+      <header class="header section-size">
+        <a class="link" href="#">
+          <img class="logo" src="/media/images/Mars-min.svg" alt="Логотип марс" />
+        </a>
+
+        <nav class="header__navigation">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="header__navigation-links">
+              <li class="header__navigation-links-item">
+                <a class="header__navigation-link link" href="#">О марсе</a>
+              </li>
+              <li class="header__navigation-links-item">
+                <a class="header__navigation-link link" href="#">Процесс</a>
+              </li>
+              <li class="header__navigation-links-item">
+                <a class="header__navigation-link link" href="#">Билеты</a>
+              </li>
+              <li class="header__navigation-links-item">
+                <a class="header__navigation-link link" href="#">Новости</a>
+              </li>
+              <li class="header__navigation-links-item">
+                <a class="header__navigation-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+        </nav>
+
+        <a class="button link" href="#">Купить билеты</a>
+      </header>
+      <main class="main section-size">
+        <div class="wrapper-main">
+
+        <div class="route">
+          <div class="route__circle"></div>
+          <div class="route__line"></div>
+          <div class="route__circle route__circle_animated"></div>
+        </div>
+        <p class="subtitle">Точка назначения:</p>
+        <video class="video" autoplay muted loop>
+          <source src="/media/videos/Mars.mp4" type="video/mp4">
+          <source src="/media/videos/Mars2.webm" type="video/webm">
+          Ваш браузер не поддерживает тег video.
+        </video>
+      </div>
+        <h1 class="title">Марс</h1>
+
+      </main>
+
+
+
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
